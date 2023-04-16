@@ -27,6 +27,7 @@ function ManageExpenses({ route, navigation }) {
   }
 
   function confirmHandler() {
+    console.log(isEditing)
     if (isEditing) {
       expenseCtx.updateExpense(
         editedExpenseId,

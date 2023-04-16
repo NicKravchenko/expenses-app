@@ -83,7 +83,7 @@ function expensesReducer(state, action) {
       const updatableExpenseItem = state[updatableExpenseIndex];
       const updatedExpense = {
         ...updatableExpenseItem,
-        ...action.payload.expenseData,
+        ...action.payload.data,
       };
       const updatedExpenses = [...state];
       updatedExpenses[updatableExpenseIndex] = updatedExpense;
